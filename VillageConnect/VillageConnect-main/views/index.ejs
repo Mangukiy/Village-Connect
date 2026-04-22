@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>VillageConnect</title><link rel="stylesheet" href="/style.css"></head>
+<body>
+<header>
+    VillageConnect <br>
+    <small>Connecting Villages to Essential Services</small>
+</header>
+
+<div class="container">
+    <!-- Your content here -->
+</div>
+
+<footer>
+    Powered by AWS | Designed with ❤️ by Kartik Solanki
+</footer>
+
+<div class="container">
+  <h1>VillageConnect</h1>
+  <p><a class="btn" href="/add">Add Service</a></p>
+  <table>
+    <thead><tr><th>Title</th><th>Description</th><th>Contact</th><th>Actions</th></tr></thead>
+    <tbody>
+    <% services.forEach(function(s){ %>
+      <tr>
+        <td><%= s.title %></td>
+        <td><%= s.description %></td>
+        <td><%= s.contact %></td>
+        <td><a class="btn danger" href="/delete/<%= s.id %>" onclick="return confirm('Delete?')">Delete</a></td>
+      </tr>
+    <% }) %>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>
