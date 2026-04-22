@@ -51,10 +51,10 @@ The project is designed for quick and scalable deployment on **AWS EC2 and RDS**
 VillageConnect/
 ├── app.js
 ├── views/
-│   ├── index.ejs
-│   └── add.ejs
+│ ├── index.ejs
+│ └── add.ejs
 ├── public/
-│   └── css/
+│ └── css/
 ├── create_table.sql
 ├── .env.example
 └── README.md
